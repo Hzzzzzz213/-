@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "未命名"
             }
+          },
+          {
+            "id": "12b182fa4afd8d47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "55656565.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "55656565"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名.md",
+                "file": "55656565.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "未命名 的反向链接列表"
+              "title": "55656565 的反向链接列表"
             }
           },
           {
@@ -169,8 +184,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,14 +194,17 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e4f99a03996fb615",
+  "active": "12b182fa4afd8d47",
   "lastOpenFiles": [
+    "未命名.md",
+    "55656565.md",
+    "未命名 1",
     "新建 文本文档.txt",
     "新建 TextualConfig.TCF",
-    "未命名.md",
     "未命名"
   ]
 }
