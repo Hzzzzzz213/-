@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "358fa78d7e072182",
+        "id": "1ad78542e2e7965f",
         "type": "tabs",
         "children": [
           {
-            "id": "e4f99a03996fb615",
+            "id": "392fece2e8571194",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "字符串选择指针和数组.md",
+                "file": "结尾手动写 0.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "字符串选择指针和数组"
-            }
-          },
-          {
-            "id": "e09b65288207aa24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "结构体指针.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "结构体指针"
+              "title": "结尾手动写 0"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#define（文本替换，预处理器处理）",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -209,30 +194,42 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e09b65288207aa24",
+  "active": "392fece2e8571194",
   "lastOpenFiles": [
+    "结构体指针.md",
+    "结尾手动写 0.md",
+    "字符串.md",
+    "C 常用数据类型.md",
+    "%s结尾末尾必须有 0.md",
+    "数组内字节数.md",
+    "typedef 和 #define 宏定义核心区别.md",
+    "GPIO  InitTypeDef 和 GPIO  InitStructure;.md",
+    "字符串选择指针和数组.md",
+    "数组个数.md",
+    "2种宏定义.md",
+    "未命名.canvas",
+    "2026-07-19.md",
+    "未命名 1/未命名.md",
+    "未命名/放大器.md",
+    "2026-06-05.md",
+    "未命名 2/未命名.md",
+    "未命名 2",
+    "未命名 1/未命名.canvas",
+    "未命名 1",
+    "css",
     "Pasted image 20260610165400.png",
     "Pasted image 20260610165415.png",
     "Pasted image 20260610165436.png",
-    "2种宏定义.md",
-    "结构体指针.md",
-    "数组个数.md",
-    "字符串.md",
-    "数组内字节数.md",
-    "字符串选择指针和数组.md",
     "Pasted image 20260610165158.png",
     "Pasted image 20260605190003.png",
     "Pasted image 20260605185948.png",
     "C宏定义",
-    "未命名/放大器.md",
-    "2026-06-05.md",
     "未命名",
     "放大器",
     "未命名/字符串.md",
     "未命名/字符串选择指针和数组.md",
     "未命名/数组内字节数.md",
     "未命名.base",
-    "未命名.canvas",
     "55656565.md",
     "C语言",
     "新建 文本文档.txt",
