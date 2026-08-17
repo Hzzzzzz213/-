@@ -433,7 +433,7 @@
   "cMenuNumRows": 12,
   "cMenuWidth": 610,
   "cMenuFontColor": "#2DC26B",
-  "cMenuBackgroundColor": "#d3f8b6",
+  "cMenuBackgroundColor": "#ff4d4f",
   "autohide": false,
   "Iscentered": false,
   "custom_bg1": "#FFB78B8C",
@@ -504,7 +504,7 @@
       "artifact": "03-agent"
     },
     "pkmer": {
-      "tokenExpiresAt": 1785296311766,
+      "tokenExpiresAt": 1786511182890,
       "userInfo": {
         "sub": "054d57b6-6aff-4a0a-9fae-94b7263686b3",
         "name": "3277442156@qq.com",
