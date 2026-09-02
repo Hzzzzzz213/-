@@ -1,0 +1,124 @@
+════════════════════════════════════════════
+  常见单词整理（来自 常见单词.md）
+════════════════════════════════════════════
+
+【一、日常通用词汇】
+────────────────────────────
+
+1. core  [kɔː(r)]   n. / adj. / v.
+   核心、精髓（物体中心部分、事物最重要的本质）
+   搭配：core value 核心价值观
+        the core of the problem 问题的根源
+        core members 核心成员
+
+2. general  [ˈdʒenrəl]   adj. / n.
+   通用的、普遍的、总的、大体的
+   搭配：general idea 大致想法、梗概
+        general public 普通大众、公众
+        in general 总的来说、大体上
+   例句：in general, young people prefer popular-style music.
+       （大体而言，年轻人更喜欢流行风格的音乐。）
+
+3. mode  n.
+   模式、方式（电子/编程语境指设备/引脚的工作模式，日常可表示做事方式、状态）
+
+4. rising / falling / trigger
+   rising：上升的、兴起的
+   falling：下降、跌入
+   trigger：扳机；引申为诱因、触发因素；触发、引发
+
+5. config  n.
+   配置、设置（configuration 的缩写）
+
+6. priority  n.
+   优先、优先级
+
+7. group  n.
+   组、团体、群
+
+8. external  adj.
+   外部的、外面的
+
+9. status / state
+   status：状态、状况（计算机/单片机语境指硬件、寄存器的运行状态、标志状态）
+       搭配：status flag 状态标志位
+            interrupt status 中断状态
+            device status 设备状态
+   state：状态、状况；也可表示国家、州（固件代码里高频表示硬件使能/关闭状态）
+   ★ 区别：
+     state  = 使能状态（写，软件配置开关）→ enable / disable
+     status = 标志状态（读，硬件反馈结果）→ set / reset
+
+10. internal  [ɪnˈtɜːnl]   adj.
+    内部的；片内的（intern 内部 + al 形容词后缀）
+    反义词：external（外部的）
+
+11. update  v. / n.
+    更新（stm32 定时器语境特指"更新事件"：计数器溢出后清零的硬件事件）
+    例：tim update interrupt 定时器更新中断
+
+12. interrupt  n. / v.
+    打断、中断（日常表示打断谈话；计算机/单片机领域指硬件中断）
+    例：interrupt request 中断请求
+
+【二、stm32 / 嵌入式专业术语】
+────────────────────────────
+
+1. pvd（power voltage detector，电源电压检测器）
+   power 电源 / voltage 电压 / detector 检测器
+
+2. rtc（real-time clock，实时时钟）
+   real 实时 / time 时间 / clock 时钟
+
+3. eth（ethernet，以太网）
+   ether 以太 + net 网络
+
+4. gpio（general-purpose input/output，通用输入输出）工作模式
+   浮空输入     gpio_mode_in_floating
+   上拉输入     gpio_mode_ipu
+   下拉输入     gpio_mode_ipd
+   模拟输入     gpio_mode_ain
+   开漏输出     gpio_mode_out_od
+   推挽输出     gpio_mode_out_pp
+   复用开漏输出 gpio_mode_af_od
+   复用推挽输出 gpio_mode_af_pp
+
+5. irq / irqn / irqhandler
+   irq = interrupt request 中断请求
+   irqn = interrupt request number 中断请求编号
+   handler 处理程序
+   → irqhandler 中断请求处理程序
+
+6. getflagstatus（get flag status，获取标志状态）
+   函数：flagstatus getflagstatus(uint32_t flag)
+   get 获取 / flag 标志位（硬件事件标记）/ status 状态
+
+7. set / reset
+   set 设置，置 1
+   reset 复位，置 0
+
+8. startup
+   启动；启动文件（start + up）
+
+9. preemption / subpriority
+   preemption 抢占
+   subpriority 子优先级、响应优先级（sub + priority）
+   nvic（nested vectored interrupt controller）中断控制器
+
+10. specifies the counter mode
+    指定计数器模式（specify 三单 + counter 计数器 + mode 模式）
+
+11. 手册常用词
+    parameter [pəˈræmɪtə(r)] 参数
+    value [ˈvæljuː] 值
+    @ref 参考（stm32 hal 库注释标记）
+    tim（timer）定时器
+    counter 计数器
+
+12. itconfig = interrupt configuration 中断配置
+    it 中断 + config 配置
+
+【附：gpio 模式要点速查】
+────────────────────────────
+输入模式（4 种）：浮空 / 上拉 / 下拉 / 模拟
+输出模式（4 种）：开漏 / 推挽 / 复用开漏 / 复用推挽
