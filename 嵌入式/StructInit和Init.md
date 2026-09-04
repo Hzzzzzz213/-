@@ -1,5 +1,5 @@
 列如
-==TIM_TimBaseStructure==  ：
+==TIM_TimeBaseStructInit==
 给 `TIM_TimeBaseInitTypeDef` 结构体**填充一套默认参数**，防止结构体里面是随机垃圾值。
 
  如果不调用这个函数，局部结构体变量内存是乱的，没赋值的成员会是随机数，定时器工作异常。

@@ -1,4 +1,4 @@
-# PSC 和 ARR 参数怎么算（结合你图片的公式）
+# PSC 和 ARR 参数==怎么==算（结合你图片的公式）
 
 > 公式： $$CK_CNT_OV=\frac{CK_PSC}{((\boldsymbol{PSC+1}))\times((\boldsymbol{ARR+1}))}$$
 
@@ -59,6 +59,7 @@ TIM_TimeBaseInitStructure.TIM_Period    = 5000-1;
 ### 2. 直观换算口诀（方便以后速算）
 
 在嵌入式定时器配置中，你只需要记住这个换算链条：
+### 1Hz是1秒
 
 - **1 kHz**（1000 Hz） = 周期 **1 ms**（0.001秒）
     
