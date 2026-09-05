@@ -14,7 +14,7 @@
 TIM_Prescaler = 7200 - 1;   //PSC=7199，实际分频系数 =7200
 TIM_Period    = 10000 - 1;  //ARR=9999，实际计数次数=10000
 ```
-
+              
 ### 第一步：算计数器时钟 CK_CNT
 
 $$CK_CNT=\frac{CK_PSC}{(\boldsymbol{PSC+1})}=\frac{72000000}{7200}=10000\ \text{Hz}$$ 👉 计数器CNT每**1/10000 s = 0.1 ms**加1。
