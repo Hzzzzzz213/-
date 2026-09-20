@@ -1,3 +1,4 @@
 {
-  "promptDelete": false
+  "promptDelete": false,
+  "attachmentFolderPath": "./{{note_name}}.assets"
 }
