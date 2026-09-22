@@ -124,6 +124,29 @@ GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
 2. 结构体内部可以嵌套其他 typedef 类型（如上`GPIOSpeed_TypeDef`、`GPIOMode_TypeDef`）；
 3. 作用：把一个外设所有配置参数打包成一个结构体，一次性传给初始化函数，代码整洁。
 
+jgt
+/*输入捕获初始化*/
+
+	TIM_ICInitTypeDef TIM_ICInitStructure;							//定义结构体变量
+	TIM_ICStructInit(&TIM_ICInitStructure);							//结构体初始化，若结构体没有完整赋值
+	//则最好执行此函数，给结构体所有成员都赋一个默认值
+	//避免结构体初值不确定的问题
+	TIM_ICInitStructure.TIM_Channel = TIM_Channel_1;				//选择配置定时器通道1
+	TIM_ICInitStructure.TIM_ICFilter = 0xF;							//输入滤波器参数，可以过滤信号抖动
+	TIM_ICInit(TIM3, &TIM_ICInitStructure);							//将结构体变量交给TIM_ICInit，配置TIM3的输入捕获通道
+	TIM_ICInitStructure.TIM_Channel = TIM_Channel_2;				//选择配置定时器通道2
+	TIM_ICInitStructure.TIM_ICFilter = 0xF;							//输入滤波器参数，可以过滤信号抖动
+	TIM_ICInit(TIM3, &TIM_ICInitStructure);							//将结构体变量交给TIM_ICInit，配置TIM3的输入捕获通道
+	
+
+
+
+
+
+
+
+
+
 ## 五、核心总结
 
 1. `struct`：用来封装一组不同类型的数据；
