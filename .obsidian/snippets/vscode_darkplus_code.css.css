@@ -1,0 +1,73 @@
+/* ====================== Shiki阅读预览模式（Dark+原版色值）====================== */
+/* 注释：绿色 #6A9955，VS默认注释，开启斜体 */
+.shiki span[style*="--shiki-token-comment"] {
+    color: #6A9955 !important;
+    font-style: italic !important;
+}
+/* 关键字 void / if / for / return 紫色 #C586C0 */
+.shiki span[style*="--shiki-token-keyword"] {
+    color: #C586C0 !important;
+}
+/* 函数名 AD_Init() 浅黄色 #DCDCAA */
+.shiki span[style*="--shiki-token-function"] {
+    color: #DCDCAA !important;
+}
+/* 字符串 "" 橙红色 #CE9178 */
+.shiki span[style*="--shiki-token-string"] {
+    color: #CE9178 !important;
+}
+/* 常量/宏、数字 蓝色 #569CD6 */
+.shiki span[style*="--shiki-token-constant"] {
+    color: #569CD6 !important;
+}
+/* 普通变量、默认文字 浅灰 #D4D4D4 */
+.shiki span[style*="--shiki-token-text"] {
+    color: #D4D4D4 !important;
+}
+/* 标点符号 { } ; , 灰色 #D4D4D4 */
+.shiki span[style*="--shiki-token-punctuation"] {
+    color: #D4D4D4 !important;
+}
+
+/* ====================== Live Preview编辑器内代码块（和上面颜色保持一致）====================== */
+.cm-s-obsidian span.cm-comment {
+    color: #6A9955 !important;
+    font-style: italic !important;
+}
+.cm-s-obsidian span.cm-keyword {
+    color: #C586C0 !important;
+}
+.cm-s-obsidian span.cm-function {
+    color: #DCDCAA !important;
+}
+.cm-s-obsidian span.cm-string {
+    color: #CE9178 !important;
+}
+.cm-s-obsidian span.cm-atom,
+.cm-s-obsidian span.cm-number {
+    color: #569CD6 !important;
+}
+.cm-s-obsidian span.cm-variable {
+    color: #D4D4D4 !important;
+}
+.cm-s-obsidian span.cm-punctuation {
+    color: #D4D4D4 !important;
+}
+
+/* ========== 仅解决Shiki代码块横向截断，开启横向滚动条（VSCode原版行为） ========== */
+/* Live Preview（你截图的预览视图） */
+.HyperMD-codeblock {
+    white-space: nowrap !important;
+    overflow-x: auto !important;
+}
+
+/* 阅读模式预览 */
+.markdown-preview-view pre.shiki {
+    overflow-x: auto !important;
+}
+
+/* 代码内部禁止自动折行，保证一行到底 */
+.HyperMD-codeblock,
+.markdown-preview-view pre.shiki code {
+    white-space: pre !important;
+}
