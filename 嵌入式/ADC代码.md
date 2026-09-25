@@ -24,11 +24,11 @@ void AD_Init(void)
 	GPIO_Init(GPIOA, &GPIO_InitStructure);					//将PA0引脚初始化为模拟输入
 	
 	/*规则组通道配置*/
-	ADC_RegularChannelConfig(ADC1, ADC_Channel_0, 1, ADC_SampleTime_55Cycles5);		//规则组序列1的位置，配置为通道0
+	ADC_RegularChannelConfig(ADC1, ADC_Channel_0, 1, ADC_SampleTime_55Cycles5);		//规则组序列1的位置，配置为通道0，采样时间选择
 	
 	/*ADC初始化*/
 	ADC_InitTypeDef ADC_InitStructure;						//定义结构体变量
-	ADC_InitStructure.ADC_Mode = ADC_Mode_Independent;		//模式，选择独立模式，即单独使用ADC1
+	ADC_InitStructure.ADC_Mode = ADC_Mode_Independent;		//模式，选择独立模式，即单独使用ADC1或双ADC
 	ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;	//数据对齐，选择右对齐
 	ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;	//外部触发，使用软件触发，不需要外部触发
 	ADC_InitStructure.ADC_ContinuousConvMode = DISABLE;		//连续转换，失能，每转换一次规则组序列后停止
@@ -41,7 +41,7 @@ void AD_Init(void)
 	
 	/*ADC校准*/
 	ADC_ResetCalibration(ADC1);								//固定流程，内部有电路会自动执行校准
-	while (ADC_GetResetCalibrationStatus(ADC1) == SET);
+	while (ADC_GetResetCalibrationStatus(ADC1) == SET);//返回复位校准状态
 	ADC_StartCalibration(ADC1);
 	while (ADC_GetCalibrationStatus(ADC1) == SET);
 }
