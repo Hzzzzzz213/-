@@ -52,3 +52,7 @@ BL main   ; Branch and Link，先把返回地址保存在LR寄存器里再跳转
 - 等`main`里面的代码执行完，读取 LR 的值就能跳回原来的地方继续跑
 
 > 适合：调用子程序 / 函数，调用完还要回到原来代码继续执行
+
+==**为例方便复制，制作反汇编的指令如下：**==
+
+==`fromelf --text -a -c --output=xxx.dis xxx.axf`==
