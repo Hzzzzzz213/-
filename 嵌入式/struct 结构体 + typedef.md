@@ -9,7 +9,7 @@
 
 
 
-```
+```c
 // 定义结构体类型 struct 结构体名
 struct Test{
     char x;
@@ -32,7 +32,7 @@ obj.z = 1.23f;
 
 
 
-```
+```c
 typedef struct{
     // 各种成员变量
     char x;
@@ -44,7 +44,7 @@ typedef struct{
 ### 2. 示例代码（第一张截图）
 
 
-```
+```c
 // 用typedef给匿名结构体起别名 StructName_t
 typedef struct{
     char x;
@@ -74,7 +74,7 @@ int main(void)
 
 
 
-```
+```c
 StructName_t c;
 c.x = 'A';
 c.y = 66;
@@ -84,7 +84,7 @@ c.z = 1.23;
 ### 方式 2：结构体指针变量 → `->` 箭头运算符
 
 
-```
+```c
 StructName_t *p = &c;
 p->x = 'A';
 p->y = 66;
@@ -96,13 +96,35 @@ p->z = 1.23;
 - 实体变量用 `.`
 - 指针 / 地址变量用 `->`
 
+## 1. 顺序初始化（通用）
+
+按成员顺序赋值，缺省成员自动置 0
+
+```c
+StructName_t c = {'A', 66, 1.23f};
+StructName_t c = {'B', 99}; // z=0.0f
+```
+
+## 2. C99 指定成员初始化（嵌入式推荐）
+
+顺序随意，可读性好
+
+```c
+StructName_t c = {
+    .x='C',
+    .y=100,
+    .z=3.14f
+};
+StructName_t c = {.y=88}; // 仅y赋值，其余清零
+```
+
 ## 四、STM32 标准库实战示例（GPIO_InitTypeDef）
 
 ### 源码对应笔记
 
 
 
-```
+```c
 // 定义GPIO初始化结构体，typedef简化类型名
 typedef struct
 {
@@ -127,7 +149,9 @@ GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
 jgt
 /*输入捕获初始化*/
 
-	TIM_ICInitTypeDef TIM_ICInitStructure;							//定义结构体变量
+
+```c
+TIM_ICInitTypeDef TIM_ICInitStructure;							//定义结构体变量
 	TIM_ICStructInit(&TIM_ICInitStructure);							//结构体初始化，若结构体没有完整赋值
 	//则最好执行此函数，给结构体所有成员都赋一个默认值
 	//避免结构体初值不确定的问题
@@ -139,12 +163,7 @@ jgt
 	TIM_ICInit(TIM3, &TIM_ICInitStructure);							//将结构体变量交给TIM_ICInit，配置TIM3的输入捕获通道
 	
 
-
-
-
-
-
-
+```
 
 
 ## 五、核心总结
