@@ -55,7 +55,8 @@ typedef struct{
 int main(void)
 {
     // 无需写struct，直接用别名定义变量
-    StructName_t c;
+    StructName_t c; //c：结构体变量名
+    
     StructName_t d;
 
     // 点号 . ：结构体普通变量访问成员
