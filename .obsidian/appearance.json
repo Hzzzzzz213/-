@@ -1,7 +1,8 @@
 {
   "accentColor": "",
   "cssTheme": "",
-  "theme": "obsidian",
+  "theme": "moonstone",
   "enabledCssSnippets": [],
-  "showRibbon": true
+  "showRibbon": true,
+  "baseFontSizeAction": true
 }

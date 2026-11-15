@@ -28,3 +28,12 @@ xTaskCreate(LcdPrintTask, "task3", 128, &g_Task3Info, osPriorityNormal, NULL);
 ```
 
 关键点：**优先级全部相同 osPriorityNormal**，开启时间片轮转。
+
+
+
+
+
+
+
+
+
