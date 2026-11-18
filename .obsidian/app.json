@@ -1,4 +1,14 @@
 {
   "promptDelete": false,
-  "attachmentFolderPath": "./{{note_name}}.assets"
+  "attachmentFolderPath": "./{{note_name}}.assets",
+  "readableLineLength": true,
+  "foldIndent": false,
+  "showIndentGuide": true,
+  "rightToLeft": false,
+  "tabSize": 4,
+  "vimMode": false,
+  "autoConvertHtml": true,
+  "foldHeading": true,
+  "strictLineBreaks": false,
+  "showInlineTitle": true
 }
